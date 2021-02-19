@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>University Heights</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/1.1.3/stickyfill.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" /> -->
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+    <link rel="stylesheet" href="juxtapose/css/juxtapose.css">
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,300;1,400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style= "background-color:white">
+    <script src="config.js"></script>
+
+    <div class='bgimg'>
+        <h1>Rutgers University | University Heights | Newark</h1>
+        <h2 id="title">Uprooted.</h2>
+            <p>The price of Newark's 1967 urban renewal.</p>
+        </div>
+
+        <section id='scroll'>
+            <!--  graphic container  -->
+            <div class='scroll__graphic'>
+                <!--   actual graphic/chart   -->
+                <div class='coverimg'></div>
+            </div>
+            <!--  step/text container  -->
+            <div class='scroll__text'>
+                <div class='step' data-step='1'>
+                    <h3>This is the story of how a neighborhood in Newark, New Jersey was transformed by urban renewal in the 1960s, and the impact of this flawed process on its primarily African American residents.</h3>
+                </div></div>
+            </section>
+
+            <section id='scroll'>
+                <!--  graphic container  -->
+                <div class='scroll__graphic'>
+                    <!--   actual graphic/chart   -->
+                    <div class='video-container'>
+                        <video controls poster="images/Video_Poster01.png">
+                            <source src="images/ThisIsNewark.mp4" type="video/mp4">Your browser does not support MP4 videos.
+                        </video>
+                        <audio>
+                            <source src="images/ThisIsNewark.mp4" type="audio/mp4">
+                        </audio>
+                    </div></div>
+                    <!--  step/text container  -->
+                    <div class='scroll__text'>
+                    <div class='step' data-step='2'>
+                        <h3>The civic booster video “This is Newark, 1966,” articulated the city’s urban renewal ambitions.<br><br>Click on the screen to play the video</h3>
+                            </div>
+                    </div>
+                </section>
+
+            <section id='scroll'>
+                <!--  graphic container  -->
+                <div class='scroll__graphic'>
+                    <!--   actual graphic/chart   -->
+                    <div class='nyimg'></div>
+                </div>
+        <!--  step/text container  -->
+        <div class='scroll__text'>
+            <div class='step' data-step='3'>
+                <h3>Things did not turn out exactly as planned. </h3><br><br><br><br><br><br><br>
+                 <h3>One year after the movie was made, Newark was on fire. The 1967 uprising left 26 dead and a city in ruins, forever charring Newark’s urban renewal fantasies and the liberal vision of The Great Society.</h3><br><br><br><br><br><br><br>
+                 <h3><a href="https://newestamericans.com/newark-1967-juggernaut-movement-resolution/">Newark’s summer of discontent had deep roots</a>. For years, the city’s African Americans and other residents of color had felt alienated and robbed of opportunity -- a simmering outrage that exploded when a primarily African American residential neighborhood was targeted for demolition to make way for a medical school.</h3>
+            </div></div>
+            </section>
+        
+        <section id='scroll'>
+            <!--  graphic container  -->
+            <div class='scroll__graphic'>
+                <!--   actual graphic/chart   -->
+                <div class='uhimg'></div>
+            </div>
+    <!--  step/text container  -->
+    <div class='scroll__text'>
+        <div class='step' data-step='5'>
+            <h3>The new neighborhood, dubbed ‘University Heights’, was part of the city’s urban renewal project to create a higher education corridor in Newark’s Central Ward.</h3>
+        </div>
+        <!-- <audio>
+            <source src="audio/">
+        </audio> -->
+    </div>
+        </section>
+
+        <section id='scroll'>
+            <!--  graphic container  -->
+            <div class='scroll__graphic'>
+                <!--   actual graphic/chart   -->
+                <div class='leimg'></div>
+            </div>
+    <!--  step/text container  -->
+    <div class='scroll__text'>
+        <div class='step' data-step='6'>
+            <h3>But the creation of University Heights took its toll on the residents who were displaced to make way for it.</h3><br><br><br><br><br><br><br><br><br>
+            <h3>Louise Epperson was an occupational therapist nearing retirement. When she heard about the impending demolition of her neighborhood in a news story, <a href="https://newestamericans.com/over-my-dead-body/">she took it upon herself to fight it</a>.</h3>
+            <h4> “I told them I couldn't shake, but I wanted to shake their brains up so they could know what was happening in Newark.” <br><br>LOUISE EPPERSON</h4>
+        </div>
+        <audio controls>
+            <source src="audio/TavernToTavern.mp3">
+        </audio>
+    </div>
+</section>
+
+<section id='scroll'>
+    <!--  graphic container  -->
+    <div class='scroll__graphic'>
+        <!--   actual graphic/chart   -->
+        <div class='homeimg'></div>
+    </div>
+<!--  step/text container  -->
+<div class='scroll__text'>
+<div class='step' data-step='7'>
+    <h3>What Mayor Addonizio and his administration called urban renewal looked very different to Louise Epperson and African American residents of the neighborhood.</h3>
+    <h4>“Well I say it looks more like negro removal than urban renewal…” <br><br>LOUISE EPPERSON</h4>
+</div>
+<audio controls>
+    <source src="audio/MoreLikeNigRemoval.mp3">
+</audio>
+</div>
+</section>
+
+<section id='scroll'>
+    <!--  graphic container  -->
+    <div class='scroll__graphic'>
+        <!--   actual graphic/chart   -->
+        <div class='video-container'>
+            <video controls>
+                <source src="images/WeCameAndStayed.mp4" type="video/mp4">
+            </video>
+        </div></div>
+        <!--  step/text container  -->
+        <div class='scroll__text'>
+        <div class='step' data-step='8'>
+            <h3>In May 1967, when plans to relocate the medical school were hastily approved despite growing resistance, a government worker  warned the city council,“If you build or try to build the medical school there will be violence.”</h3><br><br><br>
+            <h3>Just three months later, on July 12, a rebellion broke out in Newark. It lasted for 6 days.<br><br>Click on the screen to play the video.</h3>
+                </div>
+        </div>
+    </section>
+
+    <section id='scroll'>
+        <!--  graphic container  -->
+        <div class='scroll__graphic'>
+            <!--   actual graphic/chart   -->
+            <div class='tankimg'>
+            </div></div>
+            <!--  step/text container  -->
+            <div class='scroll__text'>
+            <div class='step' data-step='9'>
+                <h3>Until the riots, Louise Epperson’s complaints fell mostly on deaf ears. But as the violence escalated, city officials grew desperate to save its reputation. Afraid that the housing crisis would spark another ‘race riot’, Mayor Addonizio asked her to “call them off”.</h3>
+                <h4>“I don’t care how many tanks, how many guns, how many K-9 dogs you get, I don’t care what the situation is, unless you plan to kill every black woman, man and child in this city it will not work. We must have housing.”  <br><br>LOUISE EPPERSON</h4>
+                    </div>
+                    <audio controls>
+                        <source src="audio/CallThemOff.mp3">
+                    </audio>
+            </div>
+        </section>
+
+        <section id='scroll'>
+            <!--  graphic container  -->
+            <div class='scroll__graphic'>
+                <!--   actual graphic/chart   -->
+                <iframe frameborder="0" class="juxtapose" width="100%" height="1706" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9c56f8d0-7243-11eb-83c8-ebb5d6f907df"></iframe>
+                </div>
+                <!--  step/text container  -->
+                <div class='scroll__text'>
+                <div class='step' data-step='10'>
+                    <h3>Today, this land that housed African American families is occupied by the campuses of Rutgers University and the New Jersey Institute of Technology. But what happened to the people who were displaced to build them? What about the people who are never seen in the film and who stayed in Newark after 1967? <a href="https://newestamericans.com/ballad-of-university-heights/">What did the transformation of Newark into a college town mean for these people?</a></h3>
+                        </div>
+                </div>
+            </section>
+        </body>
+</html>
